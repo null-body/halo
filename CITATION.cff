@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+authors:
+- family-names: "Gu"
+  given-names: "Y"
+title: "halo"
+version: 1.0.0
+doi: 10.5281/zenodo.1234
+date-released: 2023-02-20
+url: "https://github.com/null-body/halo"
