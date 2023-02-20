@@ -21,7 +21,7 @@ for i in range(len(rr)):
     m99.append(1500/rr[i] **(1.5)/(1 + rr[i] **(1.5)))
     ein.append(750 * np.exp((-2/0.17) * (rr[i] **(0.17) - 1)))
 
-fig = plt.figure(figsize = (9, 7.5))
+fig = plt.figure(figsize = (12, 9))
 
 plt.rcParams.update({"font.family" : "serif", "mathtext.fontset" : "stix"})
 plt.rcParams["font.serif"] = ["Times New Roman"] + plt.rcParams["font.serif"]
@@ -32,7 +32,8 @@ plt.loglog(rr, ein, 'k--', linewidth = 1, label = 'Einasto')
 
 plt.ylim(1.e-4, 1.e8)
 plt.xlim(1.e-3, 1.e3)
-plt.xlabel('$r$ / $r_c$', fontsize = 22.5)
-plt.ylabel('$\\rho$ / $\\rho_b$', fontsize = 22.5)
-plt.legend(loc = 'best', prop={'size': 15})
+plt.xlabel('$r$ / $r_c$', fontsize = 25)
+plt.ylabel('$\\rho$ / $\\rho_b$', fontsize = 25)
+plt.legend(loc = 'best', prop = {'size': 15})
+
 plt.show()
