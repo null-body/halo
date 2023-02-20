@@ -9,18 +9,18 @@ mpl.rcParams['xtick.minor.width'] = 1.4
 mpl.rcParams['ytick.major.width'] = 1.4
 mpl.rcParams['ytick.minor.width'] = 1.4
 
+om_m0 = 0.3
+rho0 = 2.78e11 * om_m0
+
 rm = np.zeros(999)
 rmult = np.zeros(999)
 ff = np.zeros(999)
 fm = np.zeros(999)
 N = np.zeros(999)
 
-om_m0 = 0.3
-rho0 = 2.78e11 * om_m0
+f = open(' ')
 
-f = open('file_location')
-
-fig = plt.figure(figsize = (9, 7.5))
+fig = plt.figure(figsize = (12, 9))
 
 plt.rcParams.update({"font.family" : "serif", "mathtext.fontset" : "stix"})
 plt.rcParams["font.serif"] = ["Times New Roman"] + plt.rcParams["font.serif"]
@@ -39,8 +39,8 @@ plt.xscale('log')
 
 plt.xlim((1.e9, 1.e16))
 plt.ylim((3.e-4, 3.e-1))
-plt.title('$z$ $=$ $0, 1, 2, 3, 4, 5$', fontsize = 22.5)
-plt.xlabel('$M$ $(h^{-1} \, M_\odot)$', fontsize = 22.5)
-plt.ylabel('$M^2$ $n(M)$ / $\\rho_0$ ', fontsize = 22.5)
+plt.title('$z$ $=$ $0, \, 1, \, 2, \, 3, \, 4, \, 5$', fontsize = 25)
+plt.xlabel('$M$ $(h^{-1} \, \\rm M_\odot)$', fontsize = 25)
+plt.ylabel('$M^2$ $n(M)$ / $\\rho_0$ ', fontsize = 25)
 
 plt.show()
